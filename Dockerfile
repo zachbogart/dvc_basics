@@ -10,3 +10,6 @@ FROM jupyter/datascience-notebook:lab-3.0.5
 # Jupytext (easier to version control)
 # ref: https://jupytext.readthedocs.io/en/latest/
 RUN pip install jupytext==1.10.2
+
+# DVC for Python
+RUN pip install dvc
