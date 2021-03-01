@@ -14,7 +14,25 @@
 # ---
 
 # %%
+# ! which python
+
+# %%
+# ! python --version
+
+# %%
 import pandas as pd
 import dvc.api
+
+# %%
+with dvc.api.open(
+        'data/iris.csv',
+        repo='https://github.com/zachbogart/dvc_basics'
+        ) as fd:
+    # ... fd is a file descriptor that can be processed normally.
+    
+    foo = pd.read_csv(fd)
+
+# %%
+foo
 
 # %%
