@@ -12,4 +12,7 @@ FROM jupyter/datascience-notebook:lab-3.0.5
 RUN pip install jupytext==1.10.2
 
 # DVC for Python
-RUN pip install dvc
+RUN pip install 'dvc[gdrive]'
+
+# fastai test
+RUN conda install -c fastai -c pytorch fastai

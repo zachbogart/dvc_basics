@@ -1,4 +1,4 @@
-# project_template
+# dvc_basics
 
 ### Run this project with vanillin 🍦
 
